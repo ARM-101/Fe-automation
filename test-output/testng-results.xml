@@ -2,36 +2,32 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24714" started-at="2019-10-24T00:08:16Z" finished-at="2019-10-24T00:08:41Z">
+  <suite name="Default suite" duration-ms="17887" started-at="2019-10-25T08:41:00Z" finished-at="2019-10-25T08:41:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="24714" started-at="2019-10-24T00:08:16Z" finished-at="2019-10-24T00:08:41Z">
+    <test name="Default test" duration-ms="17887" started-at="2019-10-25T08:41:00Z" finished-at="2019-10-25T08:41:18Z">
       <class name="com.w2a.testcases.regTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.w2a.testcases.regTest@91161c7]" name="setUp" is-config="true" duration-ms="7342" started-at="2019-10-24T00:08:09Z" finished-at="2019-10-24T00:08:16Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.w2a.testcases.regTest@91161c7]" name="setUp" is-config="true" duration-ms="7313" started-at="2019-10-25T08:40:52Z" finished-at="2019-10-25T08:41:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="regtest()[pri:0, instance:com.w2a.testcases.regTest@91161c7]" name="regtest" duration-ms="24700" started-at="2019-10-24T00:08:16Z" finished-at="2019-10-24T00:08:41Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="FAIL" signature="regtest()[pri:0, instance:com.w2a.testcases.regTest@91161c7]" name="regtest" duration-ms="17871" started-at="2019-10-25T08:41:00Z" finished-at="2019-10-25T08:41:18Z">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[Unable to locate element: .month>li[data-answer='01']
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[Element <span> could not be scrolled into view
 Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
-System info: host: 'amamillmlp.eharmony.com', ip: 'fe80:0:0:0:447:e2e6:b2a9:a9a5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_161'
+System info: host: 'amamillmlp.T-mobile.com', ip: 'fe80:0:0:0:447:e2e6:b2a9:a9a5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191009172106, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 2838, moz:profile: /var/folders/g2/lb_l1259517..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.7.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: b977a355-1d6a-4946-ac2d-762f04536d96
-*** Element info: {Using=css selector, value=.month>li[data-answer='01']}]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191009172106, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 16514, moz:profile: /var/folders/g2/lb_l1259517..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.7.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a4c59c4e-671f-d645-b78d-923980b34b31]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: .month>li[data-answer='01']
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <span> could not be scrolled into view
 Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
-System info: host: 'amamillmlp.eharmony.com', ip: 'fe80:0:0:0:447:e2e6:b2a9:a9a5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_161'
+System info: host: 'amamillmlp.T-mobile.com', ip: 'fe80:0:0:0:447:e2e6:b2a9:a9a5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191009172106, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 2838, moz:profile: /var/folders/g2/lb_l1259517..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.7.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: b977a355-1d6a-4946-ac2d-762f04536d96
-*** Element info: {Using=css selector, value=.month>li[data-answer='01']}
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191009172106, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 16514, moz:profile: /var/folders/g2/lb_l1259517..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.7.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a4c59c4e-671f-d645-b78d-923980b34b31
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -42,11 +38,9 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at com.w2a.testcases.regTest.regtest(regTest.java:87)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at com.w2a.testcases.regTest.regtest(regTest.java:93)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -74,7 +68,7 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- regtest -->

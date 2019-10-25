@@ -28,7 +28,7 @@ public class regTest extends TestBase {
 			System.out.println("************");
 			driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")), TimeUnit.SECONDS);
 			
-			driver.findElement(By.cssSelector(OR.getProperty("emailid"))).sendKeys("ttt24@mailinator.com");
+			driver.findElement(By.cssSelector(OR.getProperty("emailid"))).sendKeys("ttts8@mailinator.com");
 			driver.findElement(By.cssSelector(OR.getProperty("password"))).sendKeys("password123");
 			driver.findElement(By.cssSelector(OR.getProperty("select"))).click();
 			driver.findElement(By.cssSelector(OR.getProperty("Regsubmit"))).click();
@@ -74,23 +74,49 @@ public class regTest extends TestBase {
 			System.out.println("************");
 			
 			Thread.sleep(3000);
-			/*Select dob_month = new Select(driver.findElement(By.xpath(OR.getProperty("month_dob"))));
-			dob_month.
-			//dob_month.selectByValue("03");
-			//dob_month.selectByIndex(4);
-*/			
+			Select dob_month = new Select(driver.findElement(By.xpath(OR.getProperty("month"))));
 			
+			//dob_month.selectByValue("03");
+			dob_month.selectByIndex(4);
+			
+			
+			Select dob_dd = new Select(driver.findElement(By.xpath(OR.getProperty("DD"))));
+			dob_dd.selectByIndex(4);
+			
+			Select dob_YYYY = new Select(driver.findElement(By.xpath(OR.getProperty("YYYY"))));
+			dob_YYYY.selectByIndex(4);
+			
+			driver.findElement(By.xpath(OR.getProperty("DOB_continue"))).click();
+			
+			driver.findElement(By.xpath(OR.getProperty("ethnic_white"))).click();
+			driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")), TimeUnit.SECONDS);
+			driver.findElement(By.xpath(OR.getProperty("spirit_christian"))).click();	
+			driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")), TimeUnit.SECONDS);
+			driver.findElement(By.xpath(OR.getProperty("denom_pefer_not_to_specify"))).click();
+			driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")), TimeUnit.SECONDS);
+			driver.findElement(By.xpath(OR.getProperty("education_Masters"))).click();
+			driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")), TimeUnit.SECONDS);
+			driver.findElement(By.xpath(OR.getProperty("occupation"))).click();
+			driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")), TimeUnit.SECONDS);
+			driver.findElement(By.xpath(OR.getProperty("income"))).click();
+			driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")), TimeUnit.SECONDS);
+			driver.findElement(By.xpath(OR.getProperty("Smoke"))).click();
+			driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")), TimeUnit.SECONDS);
+			driver.findElement(By.xpath(OR.getProperty("drink"))).click();
+			
+	
 			/*WebElement element2 =driver.findElement(By.cssSelector(OR.getProperty("main")));
 			System.out.println(element2);
-			element2.click();*/
+			element2.click();
 			
-			/*WebElement element2=driver.findElement(By.cssSelector(OR.getProperty("month")));
+			WebElement element2=driver.findElement(By.cssSelector(OR.getProperty("month")));
 			Actions actions2 = new Actions(driver);
 			actions2.moveToElement(element2).click().build().perform();*/
 			
-			WebElement myselectelement=driver.findElement(By.className(")("month"));
-			Select dropdown=new Select(myselectelement);
-			drop
+			//driver.findElement(By.xpath(OR.getProperty("month"))).click();
+			
+
+			
 			
 			System.out.println("************");
 			System.out.println("Clicked on month_dob");
