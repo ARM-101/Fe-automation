@@ -28,7 +28,7 @@ public class regTest extends TestBase {
 			System.out.println("************");
 			driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")), TimeUnit.SECONDS);
 			
-			driver.findElement(By.cssSelector(OR.getProperty("emailid"))).sendKeys("tttr103@mailinator.com");
+			driver.findElement(By.cssSelector(OR.getProperty("emailid"))).sendKeys("tttr112@mailinator.com");
 			driver.findElement(By.cssSelector(OR.getProperty("password"))).sendKeys("password123");
 			driver.findElement(By.cssSelector(OR.getProperty("select"))).click();
 			driver.findElement(By.cssSelector(OR.getProperty("Regsubmit"))).click();
@@ -67,8 +67,10 @@ public class regTest extends TestBase {
 			
 			//Assert.assertTrue(isElementPresent(By.xpath(OR.getProperty("live_continue_xpath"))));
 			Thread.sleep(3000);
-			//WebElement element1= driver.findElement(By.xpath(OR.getProperty("live_continue_xpath")));
-			WebElement element1=driver.findElement(By.xpath("/html[1]/body[1]/section[2]/main[1]/footer[1]/button[2]"));
+			WebElement element1= driver.findElement(By.xpath(OR.getProperty("live_continue_xpath")));
+			System.out.println(element1);
+			
+			//WebElement element1=driver.findElement(By.xpath("/html[1]/body[1]/section[2]/main[1]/footer[1]/button[2]"));
 			//new WebDriverWait(driver, 15).until(ExpectedConditions.elementToBeClickable(element1));
 			Actions actions1 = new Actions(driver);
 			actions1.moveToElement(element1).click().build().perform();
@@ -120,16 +122,26 @@ public class regTest extends TestBase {
 			driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")), TimeUnit.SECONDS);
 			driver.findElement(By.xpath(OR.getProperty("denom_pefer_not_to_specify"))).click();
 			driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")), TimeUnit.SECONDS);
+			
+			System.out.println("************");
+			System.out.println("Clicked on denom_pefer_not_to_specify");
+			System.out.println("************");
+			
 			driver.findElement(By.xpath(OR.getProperty("education_Masters"))).click();
 			driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")), TimeUnit.SECONDS);
 			driver.findElement(By.xpath(OR.getProperty("occupation"))).click();
 			driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")), TimeUnit.SECONDS);
+			System.out.println("************");
+			System.out.println("Clicked on occupation");
+			System.out.println("************");
 			driver.findElement(By.xpath(OR.getProperty("income"))).click();
 			driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")), TimeUnit.SECONDS);
 			driver.findElement(By.xpath(OR.getProperty("Smoke"))).click();
 			driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")), TimeUnit.SECONDS);
 			driver.findElement(By.xpath(OR.getProperty("drink"))).click();
-			
+			System.out.println("************");
+			System.out.println("Clicked on drinks");
+			System.out.println("************");
 	
 			/*WebElement element2 =driver.findElement(By.cssSelector(OR.getProperty("main")));
 			System.out.println(element2);
