@@ -128,12 +128,15 @@
                   <a name="regtest">
                   </a> <!-- regtest -->
                   <span class="method-name">regtest</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: Element &lt;span&gt; could not be scrolled into view
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#social-registration &gt; div &gt; section.frameContainer__container___PSekj.frame-container &gt; section:nth-child(2) &gt; section &gt; div &gt; form &gt; fieldset.registrationForm__genderPreference___1WZy6 &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; label&quot;}
+  (Session info: chrome=78.0.3904.87)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
-System info: host: &apos;amamillmlp.local&apos;, ip: &apos;fe80:0:0:0:447:e2e6:b2a9:a9a5%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_161&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 70.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191030021342, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 95313, moz:profile: /var/folders/g2/lb_l1259517..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.7.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 9889e3b8-484f-5d4a-9077-4874b6391efb
+System info: host: &apos;amamillmlp.eharmony.com&apos;, ip: &apos;fe80:0:0:0:447:e2e6:b2a9:a9a5%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /var/folders/g2/lb_l1259517...}, goog:chromeOptions: {debuggerAddress: localhost:65280}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 294ae80f821102204a30c20c8896167e
+*** Element info: {Using=css selector, value=#social-registration &gt; div &gt; section.frameContainer__container___PSekj.frame-container &gt; section:nth-child(2) &gt; section &gt; div &gt; form &gt; fieldset.registrationForm__genderPreference___1WZy6 &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; label}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -144,9 +147,11 @@ Session ID: 9889e3b8-484f-5d4a-9077-4874b6391efb
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at com.w2a.testcases.regTest.regtest(regTest.java:137)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.w2a.testcases.regTest.regtest(regTest.java:27)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -181,7 +186,7 @@ Session ID: 9889e3b8-484f-5d4a-9077-4874b6391efb
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/g2/lb_l1259517gjzqq104k4h3x_h1v9c/T/testng-eclipse--147386335/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/g2/lb_l1259517gjzqq104k4h3x_h1v9c/T/testng-eclipse-622618374/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -234,12 +239,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'regtest')
 data.setCell(0, 2, 'com.w2a.testcases.regTest')
-data.setCell(0, 3, 14688);
+data.setCell(0, 3, 31);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <span class="suite-total-time">Total running time: 31 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -274,7 +279,7 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">regtest</span>
-                <span class="method-start">7780 ms</span>
+                <span class="method-start">2489 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
